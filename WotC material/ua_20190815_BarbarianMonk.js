@@ -30,7 +30,7 @@ AddSubClass("barbarian", "wild soul", {
 			name : "Wild Surge",
 			source : ["UA:WA", 1],
 			minlevel : 3,
-			description : "\n   " + "When I enter rage, roll 1d8 on Wild Surge table to determine effect." + "\n   " + "1) Each creature within 30ft takes 1d10 necrotic. I gain the total as temporary hp." + "\n   " + "2) Teleport up to 20ft to an unoccupied space I can see. Until rage ends, I can activate this effect each turn using a bonus action." + "\n   " + "3) 1d4 spirits conjured in unoccupied spaces within 30ft and fly in random direction. At end of turn they explode and each creature in 5 foot radius makes (Dex) save for takes 2d8 force damage." + "\n   " + "4) Arcane shield. +2 AC and when hit by a creature within 10ft, they take force damage equal to Constitution modifier." + "\n   " + "5) Plant life grows around me to create difficult terrain within 10ft." + "\n   " + "6) Each creature within 30ft makes (Wis) save or gets disadvantage on attack rolls against me until start of next turn." + "\n   " + "7) Until rage ends, weapon deals psychic instead of(bludgeoning, slashing, or piercing) and gains light and thrown properties(20/60). If dropped or thrown, weapon reappears in hand at end of turn." + "\n   " + "8) Beam of light lances from chest. 5ft wide, 60ft long, each creature makes a (Con) save or take 2d8 radiant damage and be blinded until start of my next turn.",
+			description : "\n   " + "When I enter rage, roll 1d8 on Wild Surge table to determine effect." + "\n   " + "1) Each creature within 30ft takes 1d10 necrotic. I gain the total as temporary hp." + "\n   " + "2) Teleport up to 20ft to an unoccupied space I can see. Until rage ends, I can activate this effect each turn using a bonus action." + "\n   " + "3) 1d4 spirits conjured in unoccupied spaces within 30ft and fly in random direction. At end of turn they explode and each creature in 5 foot radius makes (Dex) save for takes 2d8 force damage." + "\n   " + "4) Arcane shield. +2 AC and when hit by a creature within 10ft, they take force damage equal to Constitution modifier." + "\n   " + "5) Plant life grows around me to create difficult terrain within 10ft." + "\n   " + "6) Each creature within 30ft makes Wisdom save or gets disadvantage on attack rolls against me until start of next turn." + "\n   " + "7) Until rage ends, weapon deals psychic instead of(bludgeoning, slashing, or piercing) and gains light and thrown properties(20/60). If dropped or thrown, weapon reappears in hand at end of turn." + "\n   " + "8) Beam of light lances from chest. 5ft wide, 60ft long, each creature makes a (Con) save or take 2d8 radiant damage and be blinded until start of my next turn.",
 			action : ["action", ""]
 		},
 		"subclassfeature6" : {
@@ -73,7 +73,7 @@ AddSubClass("monk", "astral self", {
 			name : "Visage of the Astral Self",
 			source : ["UA:WA", 2],
 			minlevel : 6,
-			description : "\n   " + "[1 ki point] I can summon the visage of my Astral self for 10min for the following benefits." + "\n   " + "- I have advantage on (Wis) Insight, and (Cha) Intimidation checks" + "\n   " + "- I can see normally in darkness, both magical and non magical, for 120ft.",
+			description : "\n   " + "[1 ki point] I can summon the visage of my Astral self for 10min for the following benefits." + "\n   " + "- I have advantage on Wisdom Insight, and Charisma Intimidation checks" + "\n   " + "- I can see normally in darkness, both magical and non magical, for 120ft.",
 			action : ["bonus action", ""]
 		},
 		"subclassfeature10" : {
