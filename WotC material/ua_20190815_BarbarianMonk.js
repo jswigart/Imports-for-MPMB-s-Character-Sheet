@@ -17,20 +17,21 @@ AddSubClass("barbarian", "wild soul", {
 	subname : "Path of the Wild Soul",
 	source : ["UA:WA", 1],
 	fullname : "Wild Soul",
+	abilitySave : 3,
 	features : {
 		"subclassfeature3" : {
 			name : "Lingering Magic",
 			source : ["UA:WA", 1],
 			minlevel : 3,
-			description : "\n   " + "I can cast detect magic without using a spell slot or components." + "\n   " + "I can use this feature a number of (Con) mod(min 1) times" + "\n   " + "I regain all expended uses on a long rest",
-			action : ["action", ""]
+			description : "\n   " + "I can cast detect magic without using a spell slot or components." + "\n   " + "I can use this feature a number of Constitution modifier (min 1) times" + "\n   " + "I regain all expended uses on a long rest",
+			action : ["action", " (detect magic)"]
 		},
 		"subclassfeature3b" : {
 			name : "Wild Surge",
 			source : ["UA:WA", 1],
 			minlevel : 3,
-			description : "\n   " + "When I enter rage, roll 1d8 on Wild Surge table to determine effect." + "\n   " + "1) Each creature within 30ft takes 1d10 necrotic. I gain the total as temporary hp." + "\n   " + "2) Teleport up to 20ft to an unoccupied space I can see. Until rage ends, I can activate this effect each turn using a bonus action." + "\n   " + "3) 1d4 spirits conjured in unoccupied spaces within 30ft and fly in random direction. At end of turn they explode and each creature in 5 foot radius makes (Dex) save for takes 2d8 force damage." + "\n   " + "4) Arcane shield. +2 AC and when hit by a creature within 10ft, they take force damage equal to(Con) mod." + "\n   " + "5) Plant life grows around me to create difficult terrain within 10ft." + "\n   " + "6) Each creature within 30ft makes (Wis) save or gets disadvantage on attack rolls against me until start of next turn." + "\n   " + "7) Until rage ends, weapon deals psychic instead of(bludgeoning, slashing, or piercing) and gains light and thrown properties(20/60). If dropped or thrown, weapon reappears in hand at end of turn." + "\n   " + "8) Beam of light lances from chest. 5ft wide, 60ft long, each creature makes a (Con) save or take 2d8 radiant damage and be blinded until start of my next turn.",
-			action : ["action", " (on Rage)"]
+			description : "\n   " + "When I enter rage, roll 1d8 on Wild Surge table to determine effect." + "\n   " + "1) Each creature within 30ft takes 1d10 necrotic. I gain the total as temporary hp." + "\n   " + "2) Teleport up to 20ft to an unoccupied space I can see. Until rage ends, I can activate this effect each turn using a bonus action." + "\n   " + "3) 1d4 spirits conjured in unoccupied spaces within 30ft and fly in random direction. At end of turn they explode and each creature in 5 foot radius makes (Dex) save for takes 2d8 force damage." + "\n   " + "4) Arcane shield. +2 AC and when hit by a creature within 10ft, they take force damage equal to Constitution modifier." + "\n   " + "5) Plant life grows around me to create difficult terrain within 10ft." + "\n   " + "6) Each creature within 30ft makes (Wis) save or gets disadvantage on attack rolls against me until start of next turn." + "\n   " + "7) Until rage ends, weapon deals psychic instead of(bludgeoning, slashing, or piercing) and gains light and thrown properties(20/60). If dropped or thrown, weapon reappears in hand at end of turn." + "\n   " + "8) Beam of light lances from chest. 5ft wide, 60ft long, each creature makes a (Con) save or take 2d8 radiant damage and be blinded until start of my next turn.",
+			action : ["action", ""]
 		},
 		"subclassfeature6" : {
 			name : "Magical Reserves",
@@ -65,7 +66,7 @@ AddSubClass("monk", "astral self", {
 			name : "Arms of the Astral Self",
 			source : ["UA:WA", 2],
 			minlevel : 3,
-			description : "\n   " + "[2 ki points] I can summon Astral Arms for 10min for the following benefits." + "\n   " + " - I can use my wisdom modifier when making strength checks and strength saving throws." + "\n   " + " - The arms are monk weapons with a 10ft reach. I can use (Wis) modified instead of (Str) or (Dex) for attack and damage rolls."  + "\n   " + " - I get an extra attack when I attack with my astral arms(as a bonus action)",
+			description : "\n   " + "[2 ki points] I can summon Astral Arms for 10min for the following benefits." + "\n   " + " - I can use my Wisdom modifier when making strength checks and strength saving throws." + "\n   " + " - The arms are monk weapons with a 10ft reach. I can use Wisdom modifier instead of Strength or Dexterity for attack and damage rolls."  + "\n   " + " - I get an extra attack when I attack with my astral arms(as a bonus action)",
 			action : ["bonus action", ""]
 		},
 		"subclassfeature6" : {
@@ -79,13 +80,13 @@ AddSubClass("monk", "astral self", {
 			name : "Awakening of the Astral Self",
 			source : ["UA:WA", 2],
 			minlevel : 10,
-			description : "\n   " + "If I have both my arms and visage summoned, I gain the following benefits." + "\n   " + "- I can deflect 1d10 + (Wis) mod + monk level when taking acid, cold, fire, lightning, or force damage." + "\n   " + "- Once a turn, my astral arms can deal extra damage equal to my martial arts die." + "\n   " + "I can speak through my visage directly to a single creature" + "\n   " + "I can speak through my visage with an amplified voice(600ft)"
+			description : "\n   " + "If I have both my arms and visage summoned, I gain the following benefits." + "\n   " + "- I can deflect 1d10 + Wisdom modifier + monk level when taking acid, cold, fire, lightning, or force damage." + "\n   " + "- Once a turn, my astral arms can deal extra damage equal to my martial arts die." + "\n   " + "I can speak through my visage directly to a single creature" + "\n   " + "I can speak through my visage with an amplified voice(600ft)"
 		},
 		"subclassfeature17" : {
 			name : "Complete Astral Self",
 			source : ["UA:WA", 2],
 			minlevel : 17,
-			description : "\n   " + "[10 ki points] I can summon my complete Astral Form(arms, visage, body) for 10min, for the following benefits." + "\n   " + "- I gain +2 AC while not incapacitated." + "\n   " + "- I can attack 3 times when I use the extra attack feature to attack twice. The third attack is with astral arms" + "\n   " + "- When a creature within 10 feet is reduced to 0 hp, I can use reaction to regain ki points equal to (Wid) modifier(min 1).",
+			description : "\n   " + "[10 ki points] I can summon my complete Astral Form(arms, visage, body) for 10min, for the following benefits." + "\n   " + "- I gain +2 AC while not incapacitated." + "\n   " + "- I can attack 3 times when I use the extra attack feature to attack twice. The third attack is with astral arms" + "\n   " + "- When a creature within 10 feet is reduced to 0 hp, I can use reaction to regain ki points equal to Wisdom modifier(min 1).",
 			action : ["bonus action", ""]
 		}
 	}
